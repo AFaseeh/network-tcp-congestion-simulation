@@ -93,7 +93,7 @@ def demo(algo, delay, loss, bw):
     rtt_ms    = delay * 4
     bdp_bytes = int((bw * 1e6) * (rtt_ms / 1000) / 8)
     max_buf   = bdp_bytes * 4
-    duration  = 60
+    duration  = 20
 
     print(f"\nAlgorithm : {algo}")
     print(f"Network   : {bw}Mbps | {rtt_ms}ms RTT | {loss}% Loss")
